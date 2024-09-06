@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+    padding: 0;
+      background-color: #101013;
+      /* background: linear-gradient(60deg, rgba(0, 0, 0, 0.9), rgba(0,0,0, 0.7)); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  /* padding: 20px; */
+  /* Add any other styles you want for the content area */
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 10px;
+  }
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

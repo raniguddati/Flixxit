@@ -1,0 +1,196 @@
+/* MovieDetails.css */
+.movie-info-container{
+    padding: 20px;
+}
+.movie-details {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    background: linear-gradient(160deg, rgba(0, 0, 0, 0.9), rgba(109, 106, 106, 0.5));
+        border: 1px solid rgb(4, 4, 4);
+    border-radius: 5px;
+}
+
+.movie-poster {
+    flex: 1;
+    padding: 20px;
+    max-width: 300px;
+}
+
+.movie-poster img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.movie-info {
+    flex: 2;
+    padding: 20px;
+}
+
+.movie-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: rgba(240, 248, 255, 0.776);
+}
+
+.movie-info p {
+    margin-bottom: 10px;
+    color: aliceblue;
+}
+
+.movie-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.action-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.action-button .action-icon {
+    margin-right: 5px;
+}
+
+.action-button:hover {
+    color: #554fce;
+}
+
+.action-button.selected .action-icon.like {
+    color: #554fce;
+}
+
+.action-button.selected .action-icon.dislike {
+    color: #ff0000;
+}
+
+.reviews {
+    padding: 20px 5px ;
+    color: white;
+}
+.reviews li {
+    padding: 20px;
+    border: 1px solid #777;
+    color: whitesmoke;
+}
+.reviews ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.reviews button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.expanded-review {
+    white-space: pre-wrap;
+}
+
+
+
+.movie-about {
+    display: flex;
+    height: 400px;
+    overflow: hidden;
+    padding: 20px;
+}
+.no-reviews {
+    flex: 0 0 60%;
+    padding: 0;
+    border: none;
+}
+.no-reviews p {
+color: #fff;
+}
+.reviews{
+    flex: 0 0 60%;
+    padding: 20px;
+    overflow-y: auto;
+}
+.reviews::-webkit-scrollbar {
+    display: none;
+}
+
+.cast {
+    flex: 0 0 40%;
+    padding-left: 90px;
+    overflow-y: auto;
+    color: white;
+}
+
+.cast ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.actor-info {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.actor-info img {
+    width: 80px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.actor-details {
+    color: white;
+}
+
+.actor-details h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.actor-details p {
+    margin: 0;
+}
+/* CSS for the modal container */
+.video-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+
+/* CSS for the modal content */
+/* .video-modal-content {
+    background-color: rgba(0,0,0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+} */
+
+/* CSS for the close button (x) */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #fff;
+}

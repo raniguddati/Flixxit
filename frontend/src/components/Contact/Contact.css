@@ -1,0 +1,143 @@
+.contact {
+    background-color: #101013;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+.contact .faqs {
+    flex: 1;
+    padding-right: 35px;
+    padding-left: 25px;
+}
+
+
+.contact .faqs h2 {
+    margin-bottom: 20px;
+}
+
+.contact .faqs .faq-item {
+    margin-bottom: 20px;
+    border: 1px solid #444;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact .faqs .faq-item:hover {
+    background-color: #29292c;
+}
+
+.contact .faqs .faq-item .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact .faqs .faq-item .question svg {
+    font-size: 18px;
+}
+
+.contact .faqs .faq-item .answer {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+}
+
+.contact .raise-issue {
+    color: #ffffff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #29292c;
+    border-radius: 5px;
+    margin-right: 35px;
+}
+
+.contact .raise-issue h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+    align-self: center;
+}
+
+
+.contact .raise-issue form .input-group {
+    margin-bottom: 20px;
+}
+
+.contact .raise-issue form .input-group label {
+    margin-bottom: 5px;
+}
+
+.contact .raise-issue form input,
+.contact .raise-issue form textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #101013;
+    color: #ffffff;
+}
+
+.contact .raise-issue form input:focus,
+.contact .raise-issue form textarea:focus {
+    outline: none;
+    border-color: #6C63FF;
+}
+
+.contact .raise-issue form textarea {
+    resize: vertical;
+}
+
+.contact .raise-issue form button {
+    background-color: #6C63FF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact .raise-issue form button:hover {
+    background-color: #554ecc;
+}
+
+.contact .contact-info {
+    color: #ffffff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.contact .contact-info h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+.contact .contact-info .card-conatiner {
+    display: flex;
+}
+
+.contact .contact-info .card-conatiner .card {
+    background-color: #29292c;
+    border-radius: 5px;
+    padding: 15px;
+    margin-right: 20px;
+}
+
+.contact .contact-info .card-conatiner .card h3 {
+    margin-bottom: 10px;
+    color: #6c63ff;
+}
+
+.contact .contact-info .card-conatiner .card p {
+    color: #ffffff;
+}

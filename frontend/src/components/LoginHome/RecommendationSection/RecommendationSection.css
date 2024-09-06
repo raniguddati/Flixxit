@@ -1,0 +1,58 @@
+.recommendation-section {
+    background: linear-gradient(180deg,
+            rgba(103, 103, 103, 0.1),
+            rgba(103, 103, 103, 0.2));
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 7rem;
+}
+
+.recommendation-section .recommendation-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.recommendation-section .recommendation-subheading {
+    font-size: 1rem;
+    color: rgba(237, 236, 242, 0.8);
+    margin-bottom: 20px;
+}
+
+.recommendation-section .input-row {
+    display: flex;
+    gap: 45px;
+}
+
+.recommendation-section .input-row input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: rgba(237, 236, 242, 0.917);
+}
+
+.recommendation-section .submit-button {
+    background: linear-gradient(180deg, #6b63ff, #584fcf);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.recommendation-section .submit-button:hover {
+    background: linear-gradient(180deg, #584fcf, #6b63ff);
+}
+
+.recommendation-section .thank-you-message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #6b63ff;
+    margin-top: 20px;
+}

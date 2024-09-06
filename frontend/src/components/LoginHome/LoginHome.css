@@ -1,0 +1,77 @@
+
+.home-container {
+  padding: 10px 30px;
+}
+
+.home-container::-webkit-scrollbar {
+  display: none;
+}
+
+.movie-banner {
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.2));
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: #fff;
+  position: relative;
+  margin: 35px;
+}
+
+.movie-banner .banner-content {
+  max-width: 600px;
+  z-index: 1;
+  text-align: left;
+    background: linear-gradient(to left, transparent 10%, rgba(0, 0, 0, 0.9));
+  height: 100%;
+  padding: 20px;
+  
+}
+
+.movie-banner .movie-description  {
+  width: 80%;
+}
+
+.movie-banner .movie-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.movie-banner .movie-description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.movie-banner .play-button {
+  background-color: rgba(140, 134, 248, 0.8);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: left;
+}
+
+.movie-banner .play-button i {
+  margin-right: 10px;
+}
+
+
+.close-button.black {
+  color: black;
+}
+
+.skip-intro-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}

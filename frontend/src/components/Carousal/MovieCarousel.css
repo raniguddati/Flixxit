@@ -1,0 +1,71 @@
+/* MovieCarousel.css */
+
+.movie-carousel {
+    padding: 20px;
+    position: relative;
+}
+
+.carousel-container {
+overflow: hidden;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    transition: transform 0.3s ease; /* Add a smooth transition for the transform property */
+    will-change: transform; /* Optimize for smooth animations */
+    transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+
+.movie-card {
+    flex: 0 0 auto;
+    max-width: 200px;
+    text-align: center;
+}
+
+.movie-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.movie-card h3 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+.prev-button-container{
+    position: absolute;
+    top: 40%;
+    left: -5px;
+}
+.next-button-container{
+    position: absolute;
+    top: 40%;
+    right: -5px;
+}
+.prev-button {
+    background-image: url('../../assets/arrow.png'); /* Replace with the actual path to your left arrow image */
+    background-size: contain; /* Adjust background size as needed */
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 25px; /* Set the width and height to match your arrow image size */
+    height: 20px;
+    border: none; /* Remove button border */
+    cursor: pointer; /* Add cursor pointer for interactivity */
+  }
+  .next-button {
+    background-image: url('../../assets/arrow.png'); /* Replace with the actual path to your right arrow image */
+    background-size: contain; /* Adjust background size as needed */
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 25px; /* Set the width and height to match your arrow image size */
+    height: 20px;
+    border: none; /* Remove button border */
+    cursor: pointer; /* Add cursor pointer for interactivity */
+    transform: rotate(180deg); 
+  }

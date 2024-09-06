@@ -1,0 +1,59 @@
+/* MovieCarousel.css */
+
+.movie-carousel {
+
+    padding: 20px;
+
+    position: relative;
+}
+
+.carousel-container {
+    /* overflow-x: auto; */
+    /* Enable horizontal scrolling */
+    overflow: hidden;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+}
+
+.movie-card {
+    flex: 0 0 auto;
+    max-width: 200px;
+    /* Adjust card width as needed */
+    text-align: center;
+}
+
+.movie-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.movie-card h3 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+.next-button{
+    right: -5px;
+    top: 45%;
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+}
+.prev-button{
+    left: -5px;
+    top: 45%;
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.carousel-button{
+    background-color: transparent;
+}

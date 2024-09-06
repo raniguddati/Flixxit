@@ -1,0 +1,67 @@
+/* SearchResult.module.css */
+
+.search-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.result-card {
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.result-card:hover {
+    transform: scale(1.05);
+}
+
+.result-image {
+    width: 100%;
+    height: auto;
+}
+
+.result-details {
+    padding: 10px;
+    text-align: center;
+}
+
+.result-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.result-overview {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.result-rating {
+    font-size: 0.8rem;
+    color: #f39c12;
+    /* You can change the color as needed */
+}
+
+.result-actors {
+    font-size: 0.8rem;
+    color: #34495e;
+    /* You can change the color as needed */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .search-results {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .result-card {
+        width: 80%;
+    }
+}

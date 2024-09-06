@@ -1,0 +1,234 @@
+/* LoginHeader.module.css */
+.login-header {
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.9),
+      rgba(255, 255, 255, 0));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  color: white;
+}
+
+.toggle-button {
+  font-size: 20px;
+  background-color: #000;
+  border-radius: 50%;
+  width: 37px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px #0a0a0a, -5px -5px 10px #141414;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.center {
+  text-align: center;
+}
+
+.logo {
+  max-height: 40px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  background: #000;
+  border: none;
+  border-radius: 10px;
+  padding: 11px 11px;
+  display: flex;
+  margin-right: 10px;
+  box-shadow: 6px 6px 12px #0a0a0a, -6px -6px 12px #141414;
+}
+
+.search-input {
+  background: #000;
+  border: none;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  /* box-shadow: 5px 5px 10px #0a0a0a, -5px -5px 10px #141414; */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-icon {
+  color: white;
+}
+
+.search-bar:hover {
+  box-shadow: 6px 6px 12px #0a0a0a, -6px -6px 12px #141414;
+}
+
+.tab-names {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.logoutContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logout-icon {
+  font-size: 16px;
+  /* background-color: #000; */
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* color: #fff; */
+  cursor: pointer;
+  padding: 8px;
+  /* box-shadow: 5px 5px 10px #0a0a0a, -5px -5px 10px #141414; */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.logout-text {
+  /* display: none; */
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+.logout-container:hover .logout-text {
+  display: block;
+}
+
+.logout-icon:hover {
+  box-shadow: 6px 6px 12px #0a0a0a, -6px -6px 12px #141414;
+}
+
+.modal-sidebar {
+  position: fixed;
+  top: 8%;
+  bottom: 10%;
+  left: 8%;
+  /* Position it at the horizontal center */
+  transform: translateX(-50%);
+  /* Center the modal horizontally */
+  width: 240px;
+  height: 90%;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Semi-transparent background */
+  backdrop-filter: blur(5px);
+  /* Adjust the blur intensity as needed */
+  transition: background-color 0.3s ease-in-out,
+    backdrop-filter 0.3s ease-in-out;
+  z-index: 1000;
+  padding-top: 3px;
+  padding-bottom: 30px;
+  border-radius: 0 5% 0 5%;
+  overflow-y: auto;
+}
+
+.modal-sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Styling for each genre tab */
+.genre-tab {
+  padding: 10px 20px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.genre-tab:hover {
+  background-color: rgba(255, 255, 255, 0.345);
+  /* Change the background color on hover */
+}
+
+/* Styling for the "Genre" heading */
+.genre-heading {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Styling for "Settings" and "Logout" tabs */
+.settings-logout-tabs {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styling for individual "Settings" and "Logout" tab */
+.settings-logout-tab {
+  padding: 10px 20px;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.settings-logout-tab:hover {
+  background-color: #333;
+}
+
+.userIcon {
+  margin: 10px 60px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background: linear-gradient(to bottom, #333, #222);
+    min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdownContent div {
+  color: white;
+    padding: 12px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.dropdownContent div:hover {
+  background-color: #555;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+

@@ -1,0 +1,53 @@
+/* genre */
+.movie-cards {
+  /* margin: auto; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  align-content: center;
+padding: 10px 60px;
+}
+
+.movie-card {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  /* Remove width property to allow cards to fill the grid cell */
+  transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+
+  .movie-image {
+    width: 100%;
+    height: auto;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &::before {
+    content: attr(data-movie-title);
+    /* Display movie name from data attribute */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    /* Adjust the height of the black background */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Black background color with transparency */
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 0.8rem;
+    color: #fff;
+    /* Text color */
+    font-weight: bold;
+  }
+}
+
+.movie-title {
+  display: none;
+}

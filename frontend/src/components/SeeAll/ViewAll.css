@@ -1,0 +1,89 @@
+/* View.css */
+
+/* Container for the entire view */
+.view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* Transparent background color */
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+/* Movie Library section */
+.movie-library {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.movie-library h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Movie card container */
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* 5 images per row */
+    gap: 20px;
+}
+
+/* Movie card */
+.movie-card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    background-color: #ffffff;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Pagination.css */
+
+/* Pagination container */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Pagination button */
+.page-button {
+    background-color: #010000;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px 12px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Active page button */
+.page-button.active {
+    background-color: #6c63ff;
+    color: #fff;
+}
+
+
+.no-movies-container {
+    text-align: center;
+}
+
+.no-movies-image {
+    width: 700px;
+    height: 700px;
+}
+
+.no-movies-message {
+    color: white;
+    font-size: 28px;
+}

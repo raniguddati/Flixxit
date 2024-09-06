@@ -1,0 +1,42 @@
+/* MovieGenres.css */
+.genre-item {
+    margin-bottom: 10px;
+    /* border: 1px solid #ddd; */
+    padding: 5px;
+    position: relative;
+}
+
+.genre-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-heading {
+    font-size: 24px;
+    /* margin-bottom: 10px; */
+    color: #fff;
+}
+
+.genre-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+
+.view-more-button  {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 550;
+}
+
+.view-more-button:hover {
+    color: #6c63ff;
+}

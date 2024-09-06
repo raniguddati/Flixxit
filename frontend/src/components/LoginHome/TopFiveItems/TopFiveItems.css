@@ -1,0 +1,42 @@
+.number-container {
+    display: inline-block;
+    margin: 10px 0px 20px 10px;
+    position: relative;
+    overflow: hidden;
+    width: 150px;
+    height: 170px;
+    padding: 3px;
+    background-color: rgba(32, 31, 41, 0.05);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(251, 250, 253, 0.8);
+}
+
+.top-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.3rem;
+    color: #fff;
+}
+
+.number-container .number-image {
+    width: 100%;
+    height: 90%;
+    object-fit: contain;
+    margin-bottom: 10px;
+    margin-top: 4px;
+}
+
+.number-container:hover .number-image {
+    transform: scale(1.1);
+}
+
+.double-line-numbers {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.double-line-numbers .number {
+    font-weight: bold;
+    font-size: large;
+}

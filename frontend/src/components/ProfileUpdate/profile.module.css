@@ -1,0 +1,261 @@
+.pricing {
+    padding: 25px 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features-heading {
+    color: #6c63ff;
+    font-size: 28px;
+    margin-bottom: 35px;
+}
+
+.features {
+    flex: 1;
+    padding: 0 20px;
+    color: white;
+    list-style: none;
+}
+
+.features li {
+    font-size: 16px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.feature-icon {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.feature-icon.available {
+    color: #6c63ff;
+}
+
+.feature-icon.not-available {
+    color: red;
+}
+
+.cards {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+    cursor: pointer;
+    width: 33%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border: 2px solid #6c63ff;
+    background-color: #333;
+    color: #6c63ff;
+}
+
+.card-name {
+    color: #6c63ff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-price {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.choose-plan-button {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 180px;
+    margin: 0 auto;
+}
+
+.choose-plan-button:hover {
+    background-color: #554ecc;
+}
+
+.sign-up-form {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.sign-up-form h3 {
+    color: #6c63ff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sign-up-form form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-row {
+    flex: 1;
+    text-align: left;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.form-row label {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.form-row input {
+    padding: 10px;
+    border: 1px solid #6c63ff;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+}
+
+.preferences-form {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.preferences-form h3 {
+    color: #6c63ff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Language and Genre Selection Styles */
+.language-selection,
+.genre-selection {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+    justify-content: center;
+}
+
+.language-selection h4,
+.genre-selection h4 {
+    color: #6c63ff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.language-selection label,
+.genre-selection label {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    font-size: 18px;
+    /* background-color: #333; */
+    color: #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.language-selection input,
+.genre-selection input {
+    margin-right: 10px;
+}
+
+
+
+.payment-form {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-form h3 {
+    color: #6c63ff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.payment-form form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.payment-form .form-row {
+    flex: 1;
+    text-align: left;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.payment-form label {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.payment-form input {
+    padding: 10px;
+    border: 1px solid #6c63ff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Additional payment form styles */
+
+.payment-form .StripeElement {
+    background-color: white;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.payment-form .error {
+    color: #e74c3c;
+    margin-top: 10px;
+}
+
+.payment-form button {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.payment-form button:hover {
+    background-color: #554ecc;
+}

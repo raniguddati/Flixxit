@@ -1,0 +1,35 @@
+.kids {
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+.kids-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.3rem;
+    color: #fff;
+}
+
+.kids-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+    display: flex;
+}
+
+.kids h2 {
+    color: #fff;
+}
+
+.kids-section .kids-content {
+    display: flex;
+margin-left: 31rem ;
+    width: 60%;
+    align-items: center;
+}
+
+.kids-movie-carousel {
+    max-width: 100%;
+}

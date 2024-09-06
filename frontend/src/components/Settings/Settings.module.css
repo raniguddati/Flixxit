@@ -1,0 +1,201 @@
+/* Settings.css */
+
+/* Container styles */
+.settings-container {
+    color: #ffffff;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    /* Stack elements vertically */
+    background-color: #101013;
+    /* Background color */
+}
+
+.profile-info {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+/* Profile photo styles */
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+/* User details styles */
+.user-details {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.user-name {
+    font-size: 30px;
+    margin: 0;
+}
+
+.user-email {
+    font-size: 20px;
+    margin: 0;
+    opacity: 0.7;
+}
+
+/* Preferences section styles */
+.preferences {
+    margin-top: 20px;
+}
+
+.preferences-heading-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.preferences-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.change-preference-button {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.preference-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Adjust the number of columns as needed */
+    gap: 10px;
+}
+
+.preference-card {
+    background-color: #2b2b2b;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    position: relative;
+    /* Add relative positioning */
+    .delete-icon {
+            display: none;
+            margin-left: 5px;
+            /* Add some spacing */
+        }
+}
+
+.preference-card .delete-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.preference-card:hover {
+    background-color: #3b3b3b;
+    .delete-icon {
+            display: inline;
+            /* Display the icon on hover */
+        }
+}
+
+/* Cancel subscription button styles */
+.cancel-subscription {
+    background-color: #982114;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-top: 70px;
+    align-self: flex-end;
+}
+
+.cancel-subscription:hover {
+    background-color: #c82b19;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #2b2b2b;
+        width: 400px;
+    max-width: 90%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.modal-tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.modal-tab {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.modal-tab.active {
+    border-color: #ffffff;
+}
+
+.modal-content-container {
+    /* Add styles for the content container inside the modal */
+    padding: 20px;
+    color: white;
+}
+/* Add this style for the "Save Changes" button */
+.save-changes-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.save-changes-button:hover {
+    background-color: #0056b3;
+}

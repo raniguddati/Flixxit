@@ -1,0 +1,73 @@
+/* Header.module.css */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.9),
+      rgba(255, 255, 255, 0));
+  padding: 25px 50px;
+}
+
+.logoContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .logoContainer {
+    margin-bottom: 0;
+  }
+}
+
+.logoContainer .logo {
+  max-width: 150px;
+  height: auto;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.tabs ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.tabs ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.tabs ul .tab a {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.tabs ul .tab a:hover {
+  border-color: #6c63ff;
+}
+
+.tabs ul .tab a.active {
+  border-bottom: 3px solid #6c63ff;
+  border-top: none;
+  font-weight: 600;
+}
+
+.signupButton button {
+  background-color: #554ecc;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
