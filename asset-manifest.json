@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Flixxir/static/css/main.f009140d.css",
+    "main.js": "/Flixxir/static/js/main.6ed841bf.js",
+    "static/js/453.c0ed1e03.chunk.js": "/Flixxir/static/js/453.c0ed1e03.chunk.js",
+    "static/media/comedy.jpeg": "/Flixxir/static/media/comedy.46194d6c541500374af9.jpeg",
+    "static/media/banner2.png": "/Flixxir/static/media/banner2.dd26788161d39c206ad5.png",
+    "static/media/romance.jpeg": "/Flixxir/static/media/romance.d376debb1210708718fb.jpeg",
+    "static/media/notFound.png": "/Flixxir/static/media/notFound.d9fac2e304734b3c979a.png",
+    "static/media/devices.png": "/Flixxir/static/media/devices.e637e8539a25a2836d2b.png",
+    "static/media/kids.jpg": "/Flixxir/static/media/kids.2012939c18fa3124d686.jpg",
+    "static/media/bg1.jpeg": "/Flixxir/static/media/bg1.74e0ab68d4d9f98791ef.jpeg",
+    "static/media/arrow.png": "/Flixxir/static/media/arrow.a65547d8ee9297bc47bb.png",
+    "static/media/horror.jpeg": "/Flixxir/static/media/horror.37e5b76dfe975ad77988.jpeg",
+    "static/media/logo.png": "/Flixxir/static/media/logo.71f7a8460eeb83a3dd2f.png",
+    "index.html": "/Flixxir/index.html",
+    "main.f009140d.css.map": "/Flixxir/static/css/main.f009140d.css.map",
+    "main.6ed841bf.js.map": "/Flixxir/static/js/main.6ed841bf.js.map",
+    "453.c0ed1e03.chunk.js.map": "/Flixxir/static/js/453.c0ed1e03.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f009140d.css",
+    "static/js/main.6ed841bf.js"
+  ]
+}
