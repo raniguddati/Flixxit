@@ -1,15 +1,16 @@
 {
-  "name": "flixxit",
+  "name": "flixxit-mern",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"cd backend && npm run dev\" \"cd flixxit && npm start\""
+    "install-server": "cd backend && npm install",
+    "start-server": "cd backend && node index.js",
+    "install-client": "cd frontend && npm install",
+    "build-client": "cd frontend && npm run build",
+    "start-client": "cd frontend && npm run start"
   },
+  "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "bcrypt": "^5.1.1",
-    "concurrently": "^8.2.1"
-  }
+  "license": "ISC"
 }
